@@ -1,0 +1,135 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 0 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Branding */
+.web_name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, rgba(36, 203, 209, 1) 0%, rgba(87, 199, 133, 1) 48%, rgba(237, 221, 83, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+
+/* Navigation list */
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+/* Navigation items */
+.nav-list>li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Links */
+.nav-list>li>a {
+    color: #f5c518;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-list>li>a:hover {
+    background-color: rgba(245, 197, 24, 0.1);
+    color: #ffd700;
+}
+
+.nav-list>li>a:active {
+    color: #ffff00;
+}
+
+/* Active link */
+.navbar a.active {
+    background-color: gold;
+    color: #000;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+    background: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: #1ab0b6;
+}
+
+/* Toggle button for mobile */
+.nav-toggle {
+    display: none;
+    font-size: 1.8rem;
+    background: white;
+    border: none;
+    color: #f5c518;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+        display: none;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+        display: none;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
