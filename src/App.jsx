@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.jsx'
 import { Outlet } from 'react-router-dom'
 import useScrollReveal from './components/ScrollReveal.jsx'
 import './index.css'
+import { Analytics } from '@vercel/analytics/react'
 
 function App() {
   useScrollReveal();
@@ -13,6 +14,7 @@ function App() {
         <Navbar />
       </header>
       <Outlet />
+      <Analytics />
     </>
   )
 }
