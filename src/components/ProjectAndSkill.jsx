@@ -1,7 +1,7 @@
 import React from 'react'
 import hcj from '../assets/skills/HTML.png'
 import java from '../assets/skills/java.png'
-import reacticon from '../assets/skills/react.png'
+import reacticon from '../assets/skills/React.png'
 import boot from '../assets/skills/Spring Boot.png'
 import security from '../assets/skills/spring-security.png'
 import project1 from '../assets/skills/Project 1.png'
