@@ -113,12 +113,13 @@
     .nav-list.active {
         display: flex;
     }
-
+    
     .nav-toggle {
         display: block;
     }
-
+    
     .nav-list {
+        background-color: var(--bg-color);
         flex-direction: column;
         width: 100%;
         margin-top: 1rem;

@@ -32,3 +32,11 @@
     -webkit-text-fill-color: transparent;
     font-size: xx-large;
 }
+
+@media (max-width:768px) {
+    .skills{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
